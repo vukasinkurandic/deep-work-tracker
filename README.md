@@ -1,36 +1,12 @@
-# Deep Work Tracker
+# React + Vite
 
-A simple, beautiful React app for tracking your deep work sessions.  
-Mark the days you did deep work, see your progress by month, and enjoy a minimal UI.  
-Your data never leaves your browser.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Features
+Currently, two official plugins are available:
 
-- 📅 **Monthly Calendar:** See months from May 2025 to December 2025
-- 🟦 **Today Highlighted:** Current date is highlighted in blue
-- ✅ **Mark Deep Work:** Click a date to toggle deep work done for that day (visually indicated)
-- 🔄 **Persistence:** Your marked days are saved in your browser (localStorage), even after reloads
-- ⬅️➡️ **Month Navigation:** Go left/right through available months easily
-- 🛡 **Private:** No login, no cloud — just your local device
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Getting Started
+## Expanding the ESLint configuration
 
- **Run the App**
-    ```bash
-    npm run dev
-    ```
-
- **Open in Browser**
-    Visit [http://localhost:5173/](http://localhost:5173/) (default Vite port).
-
-## Tech Stack
-
-- [React](https://react.dev/) (with [Vite](https://vitejs.dev/))
-- [TailwindCSS](https://tailwindcss.com/) for rapid styling
-- **Persistence:** `localStorage` (no cloud, no backend)
-
-## Customization
-
-- Want to reset all data? Open the browser console and run:
-  ```js
-  localStorage.removeItem('checkedDates');
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
